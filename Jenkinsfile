@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Aconsumeeverything/sales_pipeline.git'
+                git branch: 'main', url: 'https://github.com/Aconsumeeverything/sales_pipeline.git'
+
             }
         }
 
